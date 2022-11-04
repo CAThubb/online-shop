@@ -1,0 +1,27 @@
+# Django #
+*.log
+*.pot
+*.pyc
+__pychache__/
+local_stettings.py
+db.sqlite3
+media
+
+# Backup files #
+*.bak
+
+# For Pycharm #
+.idea/**/workspace.xml
+.idea/**/discord.xml
+.idea/**/misc.xml
+.idea/**/modules.xml
+.idea/**/online-shop.xml
+.idea/**/vcs.xml
+
+# Pyton #
+*.py[cod]
+*$py.class
+
+# Installer logs 
+pip-log.tex
+

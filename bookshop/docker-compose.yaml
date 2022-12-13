@@ -1,0 +1,11 @@
+version: '3'
+services:
+  databasePSQL:
+    container_name: bookshopdb
+    image: "postgres:15-alpine"
+    ports:
+      - "8080:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=147852159
+      - POSTGRES_DB=online_shopdb

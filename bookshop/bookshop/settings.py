@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-sgkvrw5x@pmvgl$wf0#-st6_&igr!22%r!+u)_cbcm+u$tkf#1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '0.0.0.0',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -37,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'booksapi',
+    'rest_framework',
+
 ]
 
 MIDDLEWARE = [
@@ -75,8 +81,12 @@ WSGI_APPLICATION = 'bookshop.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'HOST': 'localhost',
+        'USER': 'postgres',
+        'NAME': 'online_shopdb',
+        'PASSWORD': '147852159',
+        'PORT': '8080',
     }
 }
 
